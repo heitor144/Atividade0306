@@ -1,0 +1,143 @@
+body {
+    background-color: rgb(197, 173, 237);
+}
+
+h1 {
+    color: #fff;
+    text-align: center;
+}
+
+.navbar {
+    font-size: 20px;
+    /* Espaçamento interno */
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul li {
+    display: inline;
+    align-items: center;
+}
+
+.navbar ul li a {
+    color: #001eff;
+    text-decoration: none;
+    padding: 80px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px 20px;
+    grid-template-areas:
+        ". header header header header header header ."
+        ". parte1 parte1 parte3 parte3 parte4 parte4 ."
+        ". parte2 parte2 parte3 parte3 parte5 parte5 ."
+        ". parte2 parte2 parte3 parte3 parte6 parte6 ."
+        ". parte2 parte2 . . . . ."
+        ". . . . . . . .";
+
+
+    a {
+        color: rgb(255, 111, 0);
+    }
+
+    .image {
+        display: block;
+        margin: 0 auto;
+        width: 300px;
+        height: 300px;
+        border: 4px solid black;
+        box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.476);
+    }
+}
+
+.header {
+    grid-area: header;
+    background-color: rgb(255, 255, 255);
+    align-self: end;
+    border-top: 3px solid #2de3ff;
+    box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.476);
+}
+
+.parte1 {
+    grid-area: parte1;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border-top: 3px solid #2de3ff;
+    box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.476);
+}
+
+.parte2 {
+    grid-area: parte2;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border-top: 3px solid #2de3ff;
+    box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.476);
+}
+
+.parte3 {
+    grid-area: parte3;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border-top: 3px solid #2de3ff;
+
+    .image {
+        border-radius: 200px;
+    }
+
+    box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.476);
+}
+
+.parte4 {
+    grid-area: parte4;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border-top: 3px solid #2de3ff;
+    box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.476);
+}
+
+.parte4 a {
+    display: block;
+    color: #fff;
+    background-color: rgb(193, 94, 255);
+    padding: calc(10px);
+    margin: calc(-10px);
+}
+
+.parte5 {
+    grid-area: parte5;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border-top: 3px solid #2de3ff;
+    box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.476);
+
+    h2 {
+        color: white;
+        background-color: rgb(255, 123, 0);
+    }
+}
+
+.parte6 {
+    grid-area: parte6;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border-top: 3px solid #2de3ff;
+    box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.476);
+}
+
+h2 {
+    font-size: 30px;
+}
+
+.parte2 img,
+.parte3 img {
+    display: block;
+    margin: 0 auto;
+}
+
+.crossed-line {
+    border-top: 2px solid #2de3ff;
+    width: 100%;
+}
